@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Boots And Spurs";
+  src: url("../fonts/BootsAndSpurs.ttf");
+}
+
+body {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+.logo {
+  font-family: "Boots And Spurs", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+.product-list h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header,
 footer {
   background-color: #202020;
@@ -11,6 +31,7 @@ header a {
 .cta {
   background-color: #bb0000;
   color: #fff;
+  font-size: 1.5em;
 }
 
 .reviews {
