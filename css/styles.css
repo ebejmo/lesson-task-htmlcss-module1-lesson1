@@ -18,10 +18,23 @@ h2,
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
 header,
 footer {
   background-color: #202020;
   color: #fff;
+}
+
+/* Links */
+a {
+  text-decoration: none;
 }
 
 header a {
@@ -32,6 +45,15 @@ header a {
   background-color: #bb0000;
   color: #fff;
   font-size: 1.5em;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  background-color: rgb(60, 60, 60);
+  border-radius: 5px;
 }
 
 .reviews {
@@ -48,4 +70,32 @@ header a {
 
 footer {
   text-align: center;
+}
+
+/* Homepage */
+
+.background-image {
+  background-image: url(../images/home-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  min-height: 70vh;
+}
+
+.our-guitars-img {
+  border-radius: 100px;
+}
+
+.reviews-img {
+  border-radius: 50%;
+}
+
+/* Contact page */
+
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
 }
