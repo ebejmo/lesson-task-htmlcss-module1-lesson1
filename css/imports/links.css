@@ -1,0 +1,73 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+header a {
+  color: #fff;
+  padding: 10px;
+}
+
+.cta {
+  background-color: #bb0000;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 10px 30px;
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: "";
+  padding: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -40px;
+  left: -100px;
+  transition: left ease-in 1s;
+  opacity: 0.3;
+}
+
+.cta:hover::before {
+  left: 110%;
+}
+
+.cta-small {
+  padding: 8px 20px;
+  font-size: 0.8em;
+  grid-column: 2;
+  grid-row: 2/4;
+  min-width: 51.2px;
+  text-align: center;
+}
+
+.cta-sale {
+  background-color: #127300;
+}
+
+.cta-main {
+  font-size: 1em;
+  padding: 10px 40px;
+}
+
+.cta:hover {
+  background-color: rgb(177, 0, 0);
+}
+
+.cta-sale:hover {
+  background-color: rgb(15, 102, 0);
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}

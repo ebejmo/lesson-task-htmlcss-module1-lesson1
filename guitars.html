@@ -7,10 +7,15 @@
     <meta name="description" content="View a list of the best guitars out there. Get it." />
     <title>Guitars | Guitar Kings</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/guitars.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b14d444cb1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">Guitar Kings</a>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,62 +24,65 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="guitars">
         <h1>Guitars</h1>
         <section class="product-list">
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
                 <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">View</a>
             </div>
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
-                <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <div class="product--sale">
+                    <p class="old-price">$500</p>
+                    <p>$400</p>
+                </div>                
+                <a href="products/adirondack-red.html" class="cta cta-small cta-sale">On sale</a>
             </div>
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
                 <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">View</a>
             </div>
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
                 <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">View</a>
             </div> 
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
                 <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">View</a>
             </div>
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
                 <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">View</a>
             </div>
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
                 <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">View</a>
             </div>
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
                 <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">View</a>
             </div>
-            <div>
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red">
                 <h2>Adirondack Red</h2>
                 <p>$500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">View</a>
             </div>
         </section>  
     </main>

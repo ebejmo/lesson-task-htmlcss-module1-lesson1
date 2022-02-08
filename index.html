@@ -10,10 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b14d444cb1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">Guitar Kings</a>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
         <nav>
             <ul>
                 <li><a href="index.html" class="current">Home</a></li>
@@ -24,10 +29,12 @@
     </header>
     <main>
         <section class="background-image">
-            <h1>Authentic Handmade Guitars</h1>
-            <a href="guitars.html" class="cta">View Guitars</a>
+            <div class="relative">
+                <h1>Authentic Handmade Guitars</h1>
+                <a href="guitars.html" class="cta cta-main">View guitars</a>
+            </div>    
         </section>
-        <section class="our-guitars">
+        <section class="selling-points">
             <div>
                 <h2>Our guitars are:</h2>
                 <ul>
@@ -38,52 +45,63 @@
                     <li>Options for all music lovers</li>
                 </ul>
             </div>
-            <img src="images/home-info.jpg" alt="Hand strumming guitar" class="our-guitars-img" />
+            <figure class="flex-img">
+                <img src="images/home-info.jpg" alt="Hand strumming guitar" class="our-guitars-img" />
+            </figure>        
         </section>
         <section class="reviews">
             <h2>Reviews</h2>
-            <div>
-                <p>"Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit. Suspendisse quis dictum elit. 
-                    In hac habitasse platea dictumst." - Bob Willis</p>
-                <img src="images/review-bio.jpg" alt="Profile pic of Bob Willis" class="reviews-img" />
-            </div>
-            <div>
-                <p>"Maecenas interdum, erat nec pulvinar euismod, 
-                    eros erat ornare mauris, commodo vestibulum 
-                    odio nunc id urna. Sed volutpat consequat dolor, 
-                    nec sollicitudin elit eleifend vitae" - Sally Oldfield</p>
-                <img src="images/review-bio2.jpg" alt="Profile pic of Sally Oldfield" class="reviews-img" />
+            <div class="reviews-content">
+                <div>
+                    <p>"Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Suspendisse quis dictum elit. 
+                        In hac habitasse platea dictumst." <span class="reviews-name">- Bob Willis</span></p>
+                    <figure class="flex-img reviews-flex">
+                        <img src="images/review-bio.jpg" alt="Profile pic of Bob Willis" class="reviews-img" />
+                    </figure>                    
+                </div>
+                <div>
+                    <p>"Maecenas interdum, erat nec pulvinar euismod, 
+                        eros erat ornare mauris, commodo vestibulum 
+                        odio nunc id urna. Sed volutpat consequat dolor, 
+                        nec sollicitudin elit eleifend vitae" <span class="reviews-name">- Sally Oldfield</span></p>
+                    <figure class="flex-img reviews-flex">    
+                        <img src="images/review-bio2.jpg" alt="Profile pic of Sally Oldfield" class="reviews-img" />
+                    </figure>    
+                </div>
             </div>
         </section>
         <section class="featured">
             <h2>View our guitars</h2>
-            <div class="featured--product">  
+            <div class="product">  
                 <img src="images/product.jpg" alt="Adirondack Red" />
                 <h3>Adirondack Red</h3>
                 <p>€500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">view</a>
             </div>
-            <div class="featured--product">
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red" />
                 <h3>Adirondack Red</h3>
-                <p>€500</p>
-                <a href="products/adirondack-red.html" class="cta cta-sale">On sale</a>
+                <div class="product--sale">
+                    <p class="old-price">$500</p>
+                    <p>$400</p>
+                </div>                
+                <a href="products/adirondack-red.html" class="cta cta-small cta-sale">on sale</a>
             </div>
-            <div class="featured--product">
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red" />
                 <h3>Adirondack Red</h3>
                 <p>€500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta  cta-small">view</a>
             </div>
-            <div class="featured--product">
+            <div class="product">
                 <img src="images/product.jpg" alt="Adirondack Red" />
                 <h3>Adirondack Red</h3>
                 <p>€500</p>
-                <a href="products/adirondack-red.html" class="cta">View</a>
+                <a href="products/adirondack-red.html" class="cta cta-small">view</a>
             </div>
         </section>
     </main>
-    <footer>Copyright &copy;</footer>
+    <footer>Copyright &copy;</footer>        
 </body>
 </html>

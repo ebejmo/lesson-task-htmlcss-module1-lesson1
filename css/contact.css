@@ -1,0 +1,31 @@
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+}
+
+textarea {
+  height: 73%;
+  min-height: 100px;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

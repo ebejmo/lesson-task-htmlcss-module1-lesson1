@@ -7,10 +7,15 @@
     <meta name="description" content="View our most popular guitar - the Adirondack Red." />
     <title>Adirondack Red | Guitar Kings</title>
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/product.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b14d444cb1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a href="../index.html" class="logo">Guitar Kings</a>
+        <a href="index.html" class="logo">Guitar Kings</a>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -19,22 +24,24 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="product-specific">
         <section>
-            <img src="../images/product.jpg" alt="Adirondack Red">
-            <div>
-                <img src="../images/product-specific.jpg">
-                <img src="../images/product-specific.jpg">
-                <img src="../images/product-specific.jpg">
-                <img src="../images/product-specific.jpg">
+            <figure class="flex-img">
+                <img src="../images/product.jpg" alt="Adirondack Red" class="product-image">
+            </figure> 
+            <div class="product-image-thumbnails">
+                <img src="../images/product-specific.jpg" class="product-image">
+                <img src="../images/product-specific.jpg" class="product-image">
+                <img src="../images/product-specific.jpg" class="product-image">
+                <img src="../images/product-specific.jpg" class="product-image">
             </div>
         </section>
-        <section>
+        <section class="product-specific-details">
            <h1>Adirondack Red</h1>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quaerat similique cumque necessitatibus, sit atque debitis eveniet perferendis nisi.</p>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quaerat similique cumque necessitatibus, sit atque debitis eveniet perferendis nisi.</p>
-           <p>$500</p>
-           <a href="../contact.html" class="cta">Contact Us</a>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quaerat similique cumque necessitatibus, sit atque debitis eveniet perferendis nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit?</p>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quaerat similique cumque necessitatibus, sit atque debitis eveniet perferendis nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quaerat similique cumque necessitatibus, sit atque debitis eveniet perferendis nisi. Dequant sueteri.</p>
+           <p class="product-specific-price">$500</p>
+           <a href="../contact.html" class="cta cta-main">Contact Us</a>
         </section>
     </main>
     <footer>Copyright &copy;</footer>
